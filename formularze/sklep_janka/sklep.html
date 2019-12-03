@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sklep Janka</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Sklep Janka</h1>
+
+    <form action="sklep.php" method="POST">
+      <fieldset>
+        <legend>Formularz do zamawiania</legend>
+
+        <table>
+          <thead>
+            <tr>
+              <td>Produkt</td>
+              <td>Ilość</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <label for="opony">
+                  Opony
+                </label>
+              </td>
+              <td class="input">
+                <input type="number" name="opony" id="opony" required />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="olej">
+                  Olej
+                </label>
+              </td>
+              <td class="input">
+                <input type="number" name="olej" id="olej" required />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="swiece">
+                  Świece zapłonowe
+                </label>
+              </td>
+              <td class="input">
+                <input type="number" name="swiece" id="swiece" required />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="ref">
+                  Jak dowiedzieliście się państwo o sklepie Janka?
+                </label>
+              </td>
+              <td class="input">
+                <select name="ref" id="ref">
+                  <option value="staly-klient">Jestem stałym klientem</option>
+                  <option value="reklama">Reklama TV</option>
+                  <option value="internet">Internet</option>
+                  <option value="znajomi">Znajomi</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="submit">
+                <button type="submit">Złóż zamówienie</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>

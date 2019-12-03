@@ -1,0 +1,17 @@
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}

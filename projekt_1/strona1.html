@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Proste działania</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="LOGO" />
+      </a>
+    </div>
+    <h1>PROSTE DZIAŁANIA</h1>
+    <div class="container">
+      <aside>
+        MENU:
+        <ul>
+          <li>
+            <a href="strona1.html">Proste działania</a>
+          </li>
+          <li><a href="strona2.html">
+              Potęgowanie
+            </a></li>
+        </ul>
+      </a>
+      </aside>
+      <main>
+        <form id="form">
+          <div class="italics">
+            <label for="digit-1">Podaj pierwszą liczbę:</label>
+            <input type="number" name="digit-1" id="digit-1" required /><br />
+            <label for="digit-2">Podaj drugą liczbę:</label>
+            <input type="number" name="digit-2" id="digit-2" required />
+          </div>
+          <div id="form-buttons">
+            <button type="submit" data-operation="+">DODAWANIE</button>
+            <button type="submit" data-operation="-">ODEJMOWANIE</button>
+            <button type="submit" data-operation="*">MNOŻENIE</button>
+            <button type="submit" data-operation="/">DZIELENIE</button>
+          </div>
+        </form>
+
+        <div id="results-container" style="display: none;">
+          <b>Wynik działania wynosi:</b>
+          <div id="results"></div>
+        </div>
+      </main>
+    </div>
+    <script src="js/liczenie.js"></script>
+  </body>
+</html>
